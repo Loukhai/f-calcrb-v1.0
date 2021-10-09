@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  $font-main: "Hi Melody", cursive;
+
+  body {
+    font-family: $font-main;
+    background: linear-gradient(180deg, #f79748, #dce9e9);
+
+    .calc {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .container-calc {
+        //min-height: 70vh;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background: linear-gradient(90deg, #fcaf3b, #f25c2a);
+        border-radius: 40px 40px 25px 25px;
+        border: none;
+
+        .result-head-container {
+          width: 100%;
+          background: linear-gradient(180deg, #fbf6f2, #f2f6f6);
+          border-radius: 25px 25px 0 0;
+          box-shadow: 0px 2px 9px 0px #7977663d;
+
+          .input {
+            font-size: calc(40px + (50 - 40) * (70vw - 320px) / (1500 - 320));
+            font-weight: 500;
+            overflow-x: auto;
+            width: 90%;
+            margin: auto;
+            padding: 3px 5px;
+          }
+        }
+
+        .keys-container {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: repeat(5, 1fr);
+          margin: 0.5em 0.3em;
+          .btn {
+            font-family: $font-main;
+            padding: 0.7em 0;
+            border: none;
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            font-size: calc(20px + (35 - 20) * (70vw - 320px) / (1200 - 320));
+            &.operations {
+              background-color: rgba(0, 0, 0, 0.1);
+            }
+          }
+          button {
+            &:is([onclick="read(' + ')"]) {
+              grid-column: 3/4;
+              grid-row: 5/7;
+            }
+            &:is([onclick="read('00')"]) {
+              grid-column: 1/2;
+              grid-row: 5/7;
+              border-top-left-radius: 15px;
+              border-bottom-left-radius: 17px;
+            }
+            &:is([onclick="read('*1/100')"]) {
+              grid-column: 2/3;
+              grid-row: 6/7;
+            }
+            &:is([id="btnEqual"]) {
+              grid-column: 4/6;
+              grid-row: 6/7;
+              border-bottom-right-radius: 17px;
+            }
+            &:is([onclick="read('calc! with Rb@Dev <^-^>')"]) {
+              border-top-right-radius: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

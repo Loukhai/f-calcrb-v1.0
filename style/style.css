@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  font-family: "Hi Melody", cursive;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f79748), to(#dce9e9));
+  background: linear-gradient(180deg, #f79748, #dce9e9);
+}
+
+* body .calc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+* body .calc .container-calc {
+  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  background: -webkit-gradient(linear, left top, right top, from(#fcaf3b), to(#f25c2a));
+  background: linear-gradient(90deg, #fcaf3b, #f25c2a);
+  border-radius: 40px 40px 25px 25px;
+  border: none;
+}
+
+* body .calc .container-calc .result-head-container {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fbf6f2), to(#f2f6f6));
+  background: linear-gradient(180deg, #fbf6f2, #f2f6f6);
+  border-radius: 25px 25px 0 0;
+  -webkit-box-shadow: 0px 2px 9px 0px #7977663d;
+          box-shadow: 0px 2px 9px 0px #7977663d;
+}
+
+* body .calc .container-calc .result-head-container .input {
+  font-size: calc(40px + (50 - 40) * (70vw - 320px) / (1500 - 320));
+  font-weight: 500;
+  overflow-x: auto;
+  width: 90%;
+  margin: auto;
+  padding: 3px 5px;
+}
+
+* body .calc .container-calc .keys-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  margin: 0.5em 0.3em;
+}
+
+* body .calc .container-calc .keys-container .btn {
+  font-family: "Hi Melody", cursive;
+  padding: 0.7em 0;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: calc(20px + (35 - 20) * (70vw - 320px) / (1200 - 320));
+}
+
+* body .calc .container-calc .keys-container .btn.operations {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+* body .calc .container-calc .keys-container button:is([onclick="read(' + ')"]) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  grid-row: 5/7;
+}
+
+* body .calc .container-calc .keys-container button:is([onclick="read('00')"]) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  grid-row: 5/7;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 17px;
+}
+
+* body .calc .container-calc .keys-container button:is([onclick="read('*1/100')"]) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+}
+
+* body .calc .container-calc .keys-container button:is([id="btnEqual"]) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4/6;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+  border-bottom-right-radius: 17px;
+}
+
+* body .calc .container-calc .keys-container button:is([onclick="read('calc! with Rb@Dev <^-^>')"]) {
+  border-top-right-radius: 15px;
+}
+/*# sourceMappingURL=style.css.map */
