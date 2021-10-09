@@ -21,6 +21,7 @@
 }
 
 * body .calc .container-calc {
+  height: 85vh;
   width: 70vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,6 +39,7 @@
 
 * body .calc .container-calc .result-head-container {
   width: 100%;
+  height: 15%;
   background: -webkit-gradient(linear, left top, left bottom, from(#fbf6f2), to(#f2f6f6));
   background: linear-gradient(180deg, #fbf6f2, #f2f6f6);
   border-radius: 25px 25px 0 0;
@@ -50,6 +52,7 @@
   font-weight: 500;
   overflow-x: auto;
   width: 90%;
+  height: 100%;
   margin: auto;
   padding: 3px 5px;
 }
@@ -62,6 +65,7 @@
   -ms-grid-rows: (1fr)[5];
       grid-template-rows: repeat(5, 1fr);
   margin: 0.5em 0.3em;
+  height: 85%;
 }
 
 * body .calc .container-calc .keys-container .btn {
