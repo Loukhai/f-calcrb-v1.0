@@ -54,6 +54,11 @@
             background-color: transparent;
             color: rgb(255, 255, 255);
             font-size: calc(20px + (35 - 20) * (70vw - 320px) / (1200 - 320));
+            &:hover,
+            :active {
+              background-color: #ebd724a4 !important;
+              border-radius: 35px;
+            }
             &.operations {
               background-color: rgba(0, 0, 0, 0.1);
             }

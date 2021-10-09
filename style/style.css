@@ -73,6 +73,12 @@
   font-size: calc(20px + (35 - 20) * (70vw - 320px) / (1200 - 320));
 }
 
+* body .calc .container-calc .keys-container .btn:hover,
+* body .calc .container-calc .keys-container .btn :active {
+  background-color: #ebd724a4 !important;
+  border-radius: 35px;
+}
+
 * body .calc .container-calc .keys-container .btn.operations {
   background-color: rgba(0, 0, 0, 0.1);
 }
