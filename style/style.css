@@ -53,10 +53,13 @@
   font-size: calc(50px + (55 - 50) * (100vw - 320px) / (2560 - 320));
   font-weight: 500;
   overflow-x: auto;
-  width: 90%;
   height: 100%;
   margin: auto;
-  padding: 3px 5px;
+  padding: 3px 40px;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
 }
 
 * body .calc .container-calc .keys-container {
