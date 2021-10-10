@@ -69,24 +69,10 @@
           flex-direction: row;
   margin: 0em 0em 0.3em 0;
   height: 85%;
-  /*           button {
-            
-            &:is([onclick="read('00')"]) {
-              grid-column: 1/2;
-              grid-row: 5/7;
-              border-top-left-radius: 15px;
-              border-bottom-left-radius: 17px;
-            }
-            
-            
-            &:is([onclick="read('calc! with Rb@Dev <^-^>')"]) {
-              border-top-right-radius: 15px;
-            }
-          } */
 }
 
 * body .calc .container-calc .keys-container .left-part {
-  width: 70%;
+  width: 65%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -96,11 +82,11 @@
 }
 
 * body .calc .container-calc .keys-container .left-part button {
-  font-size: calc(50px + (55 - 50) * (63vw - 320px) / (800 - 320));
+  font-size: calc( 45px + (55 - 45) * (100vw - 320px) / (2560 - 320));
 }
 
 * body .calc .container-calc .keys-container .right-part {
-  width: 30%;
+  width: 35%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -115,7 +101,7 @@
 }
 
 * body .calc .container-calc .keys-container .right-part button {
-  font-size: calc(40px + (46 - 40) * (27vw - 320px) / (800 - 320));
+  font-size: calc( 40px + (50 - 40) * (100vw - 320px) / (2560 - 320));
 }
 
 * body .calc .container-calc .keys-container .btn {
@@ -127,7 +113,7 @@
 
 * body .calc .container-calc .keys-container .btn:hover,
 * body .calc .container-calc .keys-container .btn :active {
-  background-color: #ebd724a4 !important;
+  background-color: #fce83a8a !important;
   border-radius: 200px;
 }
 

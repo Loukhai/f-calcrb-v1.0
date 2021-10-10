@@ -53,17 +53,19 @@
           height: 85%;
 
           .left-part {
-            width: 70%;
+            width: 65%;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(5, 1fr);
             button {
-              font-size: calc(50px + (55 - 50) * (63vw - 320px) / (800 - 320));
+              font-size: calc(
+                45px + (55 - 45) * (100vw - 320px) / (2560 - 320)
+              );
               //0.6em padding total container
             }
           }
           .right-part {
-            width: 30%;
+            width: 35%;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(7, 1fr);
@@ -72,7 +74,9 @@
             border-radius: 15px 0px 25px 15px;
             box-shadow: inset 5px 0px 0px 0px #ffc107;
             button {
-              font-size: calc(40px + (46 - 40) * (27vw - 320px) / (800 - 320));
+              font-size: calc(
+                40px + (50 - 40) * (100vw - 320px) / (2560 - 320)
+              );
             }
           }
 
@@ -84,7 +88,7 @@
 
             &:hover,
             :active {
-              background-color: #ebd724a4 !important;
+              background-color: #fce83a8a !important;
               border-radius: 200px;
             }
             &:is([id="btnRemove1Caractr"]) {
@@ -102,21 +106,6 @@
               border-radius: 0 25px 25px 0;
             }
           }
-
-          /*           button {
-            
-            &:is([onclick="read('00')"]) {
-              grid-column: 1/2;
-              grid-row: 5/7;
-              border-top-left-radius: 15px;
-              border-bottom-left-radius: 17px;
-            }
-            
-            
-            &:is([onclick="read('calc! with Rb@Dev <^-^>')"]) {
-              border-top-right-radius: 15px;
-            }
-          } */
         }
       }
     }
