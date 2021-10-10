@@ -6,6 +6,12 @@ const display = document.querySelector(".input");
 const btnEqual = document.getElementById("btnEqual");
 const btnClear = document.getElementById("btnClear");
 
+//btn Clear
+
+btnClear.onclick = function () {
+  display.textContent = "0";
+};
+
 //function to read the value from the keys and write in display
 function read(i) {
   //let result = eval(display.textContent);
@@ -41,13 +47,11 @@ btnRemove1Caractr.onclick = () => {
   //let lengthDisplay = display.textContent.length;
   let newDisplay = display.textContent.slice(0, -1);
   display.textContent = newDisplay;
-  console.log(newDisplay);
 };
 
 const btnMR = document.getElementById("btnMR");
 const btnMAdd = document.getElementById("btnMAdd");
 const btnMRemove = document.getElementById("btnMRemove");
-const btnMC = document.getElementById("btnMC");
 
 btnMAdd.onclick = () => {
   localStorage.setItem("MR", display.textContent);
@@ -71,10 +75,16 @@ btnMR.onclick = () => {
 btnMRemove.onclick = () => {
   localStorage.removeItem("MR", display.textContent);
 };
+
+/* 
+ignore yhis function
+
+
+
+
+const btnMC = document.getElementById("btnMC");
 btnMC.onclick = () => {
   localStorage.clear();
-};
+}; 
 
-btnClear.onclick = function () {
-  display.textContent = "0";
-};
+*/

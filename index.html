@@ -15,46 +15,52 @@
           <div class="input">0</div>
         </div>
         <div class="keys-container">
-          <button id="btnMC" class="btn">MRC</button>
-          <button id="btnMRemove" class="btn">M-</button>
-          <button id="btnMAdd" class="btn">M+</button>
-          <button id="btnMR" class="btn">MR</button>
-          <button
-            class="btn operations"
-            onclick="read('calc! with Rb@Dev <^-^>')"
-          >
-            @Rb
-          </button>
+          <div class="left-part">
+            <button id="btnMRemove" class="btn">M-</button>
+            <button id="btnMAdd" class="btn">M+</button>
+            <button id="btnMR" class="btn">MR</button>
 
-          <button class="btn" onclick="read(7)">7</button>
-          <button class="btn" onclick="read(8)">8</button>
-          <button class="btn" onclick="read(9)">9</button>
+            <button class="btn" onclick="read(7)">7</button>
+            <button class="btn" onclick="read(8)">8</button>
+            <button class="btn" onclick="read(9)">9</button>
 
-          <button id="btnRemove1Caractr" class="btn operations">&larr;</button>
-          <button id="btnClear" class="btn operations">C</button>
+            <button class="btn" onclick="read(4)">4</button>
+            <button class="btn" onclick="read(5)">5</button>
+            <button class="btn" onclick="read(6)">6</button>
 
-          <button class="btn" onclick="read(4)">4</button>
-          <button class="btn" onclick="read(5)">5</button>
-          <button class="btn" onclick="read(6)">6</button>
+            <button class="btn" onclick="read(1)">1</button>
+            <button class="btn" onclick="read(2)">2</button>
+            <button class="btn" onclick="read(3)">3</button>
 
-          <button class="btn operations" onclick="read('(')">(</button>
-          <button class="btn operations" onclick="read(')')">)</button>
+            <button class="btn operations" onclick="read('00')">00</button>
+            <button class="btn operations" onclick="read('.')">.</button>
+            <button class="btn" onclick="read(0)">0</button>
 
-          <button class="btn" onclick="read(1)">1</button>
-          <button class="btn" onclick="read(2)">2</button>
-          <button class="btn" onclick="read(3)">3</button>
+          </div>
+          <div class="right-part">
+            <button id="btnClear" class="btn operations">C</button>
+            <button
+              class="btn operations"
+              onclick="read('calc! with Rb@Dev <^-^>')"
+            >
+              @Rb
+            </button>
+            <button id="btnRemove1Caractr" class="btn operations">
+              &larr;
+            </button>
+            <button class="btn operations" onclick="read('(')">(</button>
+            <button class="btn operations" onclick="read(')')">)</button>
+            <button class="btn operations" onclick="read(' / ')">÷</button>
+            <button class="btn operations" onclick="read(' * ')">x</button>
+            <button class="btn operations" onclick="read(' - ')">-</button>
+            <button class="btn operations" onclick="read('*1/100')">%</button>
+            <button id="btnEqual" class="btn operations">=</button>
+            <button class="btn operations" onclick="read(' + ')">+</button>
+          </div>
 
-          <button class="btn operations" onclick="read(' / ')">÷</button>
-          <button class="btn operations" onclick="read(' * ')">x</button>
+          <!-- <button id="btnMC" class="btn">MRC</button> -->
 
-          <button class="btn" onclick="read(0)">0</button>
-          <button class="btn operations" onclick="read('.')">.</button>
-          <button class="btn operations" onclick="read(' - ')">-</button>
-          <button class="btn operations" onclick="read('*1/100')">%</button>
 
-          <button id="btnEqual" class="btn operations">=</button>
-          <button class="btn operations" onclick="read(' + ')">+</button>
-          <button class="btn operations" onclick="read('00')">00</button>
         </div>
       </div>
     </div>
