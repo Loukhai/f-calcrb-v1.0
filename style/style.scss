@@ -35,14 +35,19 @@
           border-radius: 25px 25px 0 0;
           box-shadow: 0px 2px 9px 0px #7977663d;
 
+          // overflow-Y: hidden;
+          // overflow-X: scroll;
+
           .input {
-            font-size: calc(50px + (55 - 50) * (70vw - 320px) / (1500 - 320));
+            font-size: calc(50px + (55 - 50) * (100vw - 320px) / (2560 - 320));
             font-weight: 500;
             overflow-x: auto;
             width: 90%;
             height: 100%;
             margin: auto;
             padding: 3px 5px;
+
+            //remove width
           }
         }
 
@@ -86,8 +91,7 @@
             background-color: transparent;
             color: rgb(255, 255, 255);
 
-            &:hover,
-            :active {
+            &:active {
               background-color: #fce83a8a !important;
               border-radius: 200px;
             }

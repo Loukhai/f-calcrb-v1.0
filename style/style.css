@@ -50,7 +50,7 @@
 }
 
 * body .calc .container-calc .result-head-container .input {
-  font-size: calc(50px + (55 - 50) * (70vw - 320px) / (1500 - 320));
+  font-size: calc(50px + (55 - 50) * (100vw - 320px) / (2560 - 320));
   font-weight: 500;
   overflow-x: auto;
   width: 90%;
@@ -111,8 +111,7 @@
   color: white;
 }
 
-* body .calc .container-calc .keys-container .btn:hover,
-* body .calc .container-calc .keys-container .btn :active {
+* body .calc .container-calc .keys-container .btn:active {
   background-color: #fce83a8a !important;
   border-radius: 200px;
 }
