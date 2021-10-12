@@ -32,7 +32,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 15px;
   background: -webkit-gradient(linear, left top, right top, from(#fcaf3b), to(#f25c2a));
   background: linear-gradient(90deg, #fcaf3b, #f25c2a);
   border-radius: 40px 40px 25px 25px;
@@ -47,6 +46,11 @@
   border-radius: 25px 25px 0 0;
   -webkit-box-shadow: 0px 2px 9px 0px #7977663d;
           box-shadow: 0px 2px 9px 0px #7977663d;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  /*  span {
+            scroll-snap-align: end;
+          } */
 }
 
 * body .calc .container-calc .result-head-container .input {
@@ -58,8 +62,6 @@
   padding: 3px 40px;
   overflow-y: hidden;
   white-space: nowrap;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
 }
 
 * body .calc .container-calc .keys-container {
@@ -70,7 +72,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 0em 0em 0.3em 0;
   height: 85%;
 }
 
@@ -82,6 +83,7 @@
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[5];
       grid-template-rows: repeat(5, 1fr);
+  padding: 1.3em 1em;
 }
 
 * body .calc .container-calc .keys-container .left-part button {
@@ -97,7 +99,7 @@
   -ms-grid-rows: (1fr)[7];
       grid-template-rows: repeat(7, 1fr);
   background-color: rgba(20, 19, 15, 0.26);
-  padding: 0.7em 0;
+  padding: 2em 0.3em 1.7em 0em;
   border-radius: 15px 0px 25px 15px;
   -webkit-box-shadow: inset 5px 0px 0px 0px #ffc107;
           box-shadow: inset 5px 0px 0px 0px #ffc107;
