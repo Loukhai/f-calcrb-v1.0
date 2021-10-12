@@ -99,7 +99,7 @@
   -ms-grid-rows: (1fr)[7];
       grid-template-rows: repeat(7, 1fr);
   background-color: rgba(20, 19, 15, 0.26);
-  padding: 2em 0.3em 1.7em 0em;
+  padding: 2em 0.3em 0.8em 0em;
   border-radius: 15px 0px 25px 15px;
   -webkit-box-shadow: inset 5px 0px 0px 0px #ffc107;
           box-shadow: inset 5px 0px 0px 0px #ffc107;
@@ -145,6 +145,7 @@
   grid-column: 1/2;
   grid-row: 6/-1;
   background-color: #ffc107;
+  margin: 0.5em 0 0em;
   border-radius: 0 25px 25px 0;
 }
 /*# sourceMappingURL=style.css.map */
